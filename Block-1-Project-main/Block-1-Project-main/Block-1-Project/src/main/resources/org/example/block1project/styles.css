@@ -1,0 +1,104 @@
+/* General Styles */
+.root {
+    -fx-background-color: #ffffff; /* white background for dark mode */
+    -fx-font-family: 'Segoe UI', sans-serif; /* Modern sans-serif font */
+    -fx-padding: 20px;
+}
+
+.tab-header .tab {
+    -fx-text-fill: #ffffff; /* Set text color of tabs to white */
+}
+
+/* TabPane Styling */
+.tab-pane .tab-header-background {
+    -fx-text-fill: #ffffff; /* Dark gray background for the tab bar */
+    -fx-background-radius: 15
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent; /* Transparent tabs */
+    -fx-text-fill: #ffffff; /* White text for tabs */
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ffa000; /* Dark teal background for selected tab */
+    -fx-text-fill: #ffffff;
+}
+
+.tab {
+    -fx-background-radius: 15; /* Rounded corners for the tabs */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.tab:hover {
+    -fx-background-color: #ffa000; /* Slightly darker teal on hover */
+    -fx-text-fill: #ffffff;
+}
+
+.ScrollPane {
+    -fx-background-radius: 15
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #ffa000; /* Dark green button background */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-background-radius: 10; /* Rounded corners for buttons */
+    -fx-font-size: 20px;
+    /*-fx-font-weight: bold; */
+    -fx-padding: 10px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+    -fx-border-width: 0;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #ffa000; /* Slightly lighter green on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 8, 0, 0, 2);
+}
+
+/* Label Styling */
+.label {
+    -fx-text-fill: #000000; /* White text for labels */
+    -fx-font-size: 16px; /* Larger text for readability */
+}
+
+/* Chart Styling */
+.chart {
+    -fx-background-color: transparent; /* Transparent background for charts */
+}
+
+.chart-legend-item {
+    -fx-background-color: transparent;
+}
+
+.line-chart, .pie-chart {
+    -fx-background-color: #1c1c1c; /* Dark gray background for charts */
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+.line-chart .chart-plot-background {
+    -fx-background-color: transparent;
+}
+
+.arc {
+    -fx-fill: #004d40; /* Deep teal color for Arc */
+}
+
+/* Styling for System Information on Home Page */
+#home-page-info {
+    -fx-background-color: #1c1c1c; /* Dark gray background for information pane */
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 5);
+}
+
+#home-page-info .label {
+    -fx-text-fill: #000000; /* White text for system information */
+    -fx-font-size: 18px; /* Larger text for important information */
+    -fx-padding: 10px 0;
+}
